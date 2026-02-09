@@ -5,7 +5,7 @@
 
 string = 'Valorqualquer'
 i = 0
-# variável com nome 'i' comum de ser utilizada para contar índices ou números.
+# variável com nome 'i' é comum de ser utilizada para contar índices ou números.
 
 while False:
     letra = string[i]

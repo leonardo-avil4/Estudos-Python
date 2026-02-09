@@ -14,7 +14,7 @@ texto = 'Python'
 #     print(letra)
 
 
-# for é um laço que percorre itens de uma sequência (strings, listas ou um intervalo de um número)
+# for é um laço que percorre itens de uma sequência (strings, listas ou um intervalo de números)
 novo_texto = ''
 for letra in texto:
 # Iteráveis entregam um valor por vez
