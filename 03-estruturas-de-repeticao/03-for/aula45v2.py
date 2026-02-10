@@ -11,7 +11,7 @@ iterator = string.__iter__()
 while True:
     try:
         print(iterator.__next__())
-        # retorna o próximo item 
+        # O método "__next__" de um iterável retorna o valor atual e aponta para o próximo item do iterável.
     except StopIteration:
         break
 
