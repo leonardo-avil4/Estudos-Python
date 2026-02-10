@@ -25,15 +25,15 @@ while not acertou:
         time.sleep(2)
         continue
 
-    if letra in palavra_secreta:
-
-        for l in palavra_secreta:
-            if letra == l:
-                palavra += l
-            else:
-                palavra += '*'
+    for l in palavra_secreta:
+        if letra == l:
+            palavra += l
         else:
-            print(palavra)
+            palavra += '*'
+    else:
+        print(palavra)
+
 
     tentativas += 1
-    
+    if palavra == palavra_secreta:
+        acertou = True
