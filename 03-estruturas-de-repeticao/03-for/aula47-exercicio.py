@@ -30,7 +30,8 @@ while not acertou:
         time.sleep(2)
         continue
 
-    if letra in palavra_secreta and letra not in letras_acertadas:
+    acertouLetra = letra in palavra_secreta and letra not in letras_acertadas
+    if acertouLetra:
         letras_acertadas += letra
 
     palavra_formada = ''
