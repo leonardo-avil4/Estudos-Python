@@ -12,13 +12,15 @@ import time
 
 palavra_secreta = input('Informe a palavra secreta: ')
 letras_acertadas = ''
-tentativas = 1
+tentativas = 0
 acertou = False
+palavra_formada = ''
 
 while not acertou:
 
     os.system('cls')
-    if letras_acertadas:
+
+    if palavra_formada:
         print(f'Palavra formada: {palavra_formada}')
 
     letra = input('Digite uma letra: ')
@@ -28,13 +30,8 @@ while not acertou:
         time.sleep(2)
         continue
 
-    if letra in palavra_secreta:
-        if letra not in letras_acertadas:
-            letras_acertadas += letra
-        else:
-            print('Você já escolheu essa letra. Tente novamente')
-            time.sleep(2)
-            continue
+    if letra in palavra_secreta and letra not in letras_acertadas:
+        letras_acertadas += letra
 
     palavra_formada = ''
     for l in palavra_secreta:
@@ -49,4 +46,4 @@ while not acertou:
 
 os.system('cls')
 print(f'A palavra secreta era: {palavra_secreta}')
-print(f'Parabéns! Você acertou. Total de tentativas {tentativas}')
+print(f'Parabéns! Você acertou. Total de tentativas: {tentativas}')
