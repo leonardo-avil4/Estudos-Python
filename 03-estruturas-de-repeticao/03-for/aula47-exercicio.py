@@ -10,7 +10,7 @@ import time
     Faça a contagem de tentativas do seu usuário.
 """
 
-palavra_secreta = input('Informe a palavra secreta: ')
+palavra_secreta = input('Informe a palavra secreta: ').lower()
 letras_acertadas = ''
 tentativas = 0
 acertou = False
@@ -23,7 +23,7 @@ while not acertou:
     if palavra_formada:
         print(f'Palavra formada: {palavra_formada}')
 
-    letra = input('Digite uma letra: ')
+    letra = input('Digite uma letra: ').lower()
 
     if len(letra) > 1:
         print('Digite apenas uma letra.')
