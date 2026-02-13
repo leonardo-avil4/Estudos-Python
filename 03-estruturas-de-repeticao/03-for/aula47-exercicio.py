@@ -45,6 +45,7 @@ while not acertou:
     if palavra_formada == palavra_secreta:
         acertou = True
 
-os.system('cls')
-print(f'A palavra secreta era: {palavra_secreta}')
-print(f'Parabéns! Você acertou. Total de tentativas: {tentativas}')
+else:
+    os.system('cls')
+    print(f'A palavra secreta era: {palavra_secreta}')
+    print(f'Parabéns! Você acertou. Total de tentativas: {tentativas}')
