@@ -21,7 +21,7 @@ else:
 
 # Um else associado à um while é executado quando a expressão desse while se torna Falsa.
 
-# Exemplo de uso da estrutura while/else:
+# Exemplo de uso da estrutura while/else ou for/else:
 # → Percorrer um objeto iterável para procurar algum dado:
 #   Dado encontrado → Utilizar o break para sair do laço.
 #   Dado não encontrado → O else é executado quando não foi possível encontrar o dado desejado.
