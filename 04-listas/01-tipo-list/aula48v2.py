@@ -22,5 +22,5 @@ print(lista2[4]) # [True, 1010, 'Python']
 print(lista2[4][-1]) # Python → -1 acessa o último item da lista
 
 lista2[4][-1] += ' 3.13.7'
-print(lista2[4])
-print(lista2[4][-1])
+print(lista2[4]) # [True, 1010, 'Python 3.13.7']
+print(lista2[4][-1]) # Python 3.13.7
