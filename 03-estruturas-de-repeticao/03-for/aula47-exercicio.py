@@ -16,8 +16,9 @@ tentativas = 0
 acertou = False
 palavra_formada = ''
 
-while not acertou:
 
+while not acertou:
+ 
     os.system('cls')
 
     if palavra_formada:
