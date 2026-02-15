@@ -30,9 +30,9 @@ while not acertou:
         letras_acertadas += letra
 
     palavra_formada = ''
-    for l in palavra_secreta:
-        if l in letras_acertadas:
-            palavra_formada += l
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            palavra_formada += letra_secreta
         else:
             palavra_formada += '*'
 
