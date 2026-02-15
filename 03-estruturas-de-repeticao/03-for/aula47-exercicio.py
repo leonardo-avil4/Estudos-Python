@@ -14,16 +14,10 @@ palavra_secreta = input('Informe a palavra secreta: ').lower()
 letras_acertadas = ''
 tentativas = 0
 acertou = False
-palavra_formada = ''
-
+os.system('cls')
 
 while not acertou:
  
-    os.system('cls')
-
-    if palavra_formada:
-        print(f'Palavra formada: {palavra_formada}')
-
     letra = input('Digite uma letra: ').lower()
 
     if len(letra) > 1:
@@ -41,6 +35,9 @@ while not acertou:
             palavra_formada += l
         else:
             palavra_formada += '*'
+
+    os.system('cls')
+    print(f'Palavra formada: {palavra_formada}')
 
     tentativas += 1
     if palavra_formada == palavra_secreta:
