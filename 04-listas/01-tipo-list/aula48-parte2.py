@@ -17,14 +17,26 @@
 lista = [10, 20, 30, 40]
 lista[2] = 300
 numero = lista[2]
-print(numero)
+print(numero) # 300
 
 del lista[2] # del → deleta um índice e reorganiza os índices da lista
-# del requer bastante processamento (depende do tamanho da lista), pois precisa reorganizar os índices que estão após aquele que foi deletado (move os índices uma posição para trás).
+# del requer bastante processamento (em listas grandes), pois precisa reorganizar os índices que estão após aquele que foi deletado (move os índices uma posição para trás).
 
 # Listas são úteis em situações onde você precisa adicionar/remover itens do final.
-
-print(lista)
-print(lista[2])
-
 # Deck (outra estrutura) → Pode ser usado para adicionar/remover itens do começo, meio e fim da estrutura.
+
+print(lista) # [10, 20, 40]
+print(lista[2]) # 40
+
+# Método append → Adiciona um item ao final da lista.
+lista.append(50)
+lista.append(60)
+lista.append('70')
+ 
+# Método pop → Remove um item específico e retorna seu valor. Remove o último item se nenhum argumento for informado.
+removido = lista.pop()
+print(lista) # [10, 20, 40, 50, 60]
+print(f'Valor removido: {removido} - {type(removido)}') # Valor removido: 70
+
+lista.pop(0)
+print(lista) # [20, 40, 50, 60]
