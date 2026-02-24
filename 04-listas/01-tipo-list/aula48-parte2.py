@@ -1,7 +1,7 @@
 
 """
 
-    Listas em Python ou Array
+    Listas (array) Python
     Tipo list - mutável
 
     Suporta vários valores de qualquer tipo
